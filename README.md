@@ -17,7 +17,7 @@ after tailwindcss has been installed with
 npm i -D tailwindcss
 ```
 
-While developing it might be usefull to serve the website localy using an utility such as [serve](https://www.npmjs.com/package/serve) which can be started with
+While developing it might be useful to serve the website localy using an utility such as [serve](https://www.npmjs.com/package/serve) which can be started with
 
 ```sh
 npx serve
