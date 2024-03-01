@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply bg-gray-100 m-5;
+}
+
+.title {
+    @apply text-2xl font-bold;
+}
+
+.link {
+    @apply text-blue-500;
+}
+
 .img-height {
     @apply max-h-[150px];
 }
