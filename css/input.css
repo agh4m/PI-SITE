@@ -15,5 +15,13 @@ body {
 }
 
 .img-height {
-    @apply max-h-[150px];
+    @apply max-h-[50px];
+}
+
+.ms {
+    @apply ms-5;
+}
+
+.lst {
+    @apply list-disc text-sm;
 }

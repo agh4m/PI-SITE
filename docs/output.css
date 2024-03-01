@@ -562,5 +562,15 @@ body {
 }
 
 .img-height {
-  max-height: 150px;
+  max-height: 50px;
+}
+
+.ms {
+  margin-inline-start: 1.25rem;
+}
+
+.lst {
+  list-style-type: disc;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
