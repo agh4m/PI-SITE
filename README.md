@@ -23,5 +23,5 @@ While developing it might be useful to serve the website localy using an utility
 npx serve
 ```
 
-This will serve the website on `http:\\localhost:3000`
+This will serve the website on `http://localhost:3000`
 
