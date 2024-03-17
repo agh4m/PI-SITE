@@ -14,14 +14,30 @@
 // v0 by Vercel.
 // https://v0.dev/t/9Zn1TyJygY3
 -->
-    <div class="bg-gray-50/90 py-12 lg:py-24">
-        <div class="grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div class="space-y-3">
-                <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                    DiSA
-                </h1>
-                <p
-                    class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+    <header id="header" class="fixed-top d-flex align-items-center" style="background-color:rgba(84,78,90,255)">
+        <div class="container d-flex align-items-center justify-content-between">
+            <nav id="navbar" class="navbar">
+                <ul style="display: flex; list-style: none; justify-content: center; align-items: center; margin: 0;">
+                    <li style="margin-left: 20px; margin-right: 30%;"><a href="index.html"><img src="./media/logo.jpeg" alt="DiSA" style="height: 80px; width: auto;"></a></li>
+                    <li style="margin-left: 20px;"><a class="nav-link scrollto" href="#about" style="font-size: 25px; font-weight: bold; color: white">About</a></li>
+                    <li style="margin-left: 20px;"><a class="nav-link scrollto" href="#architecture" style="font-size: 25px; font-weight: bold; color: white">Architecture</a></li>
+                    <li style="margin-left: 20px;"><a class="nav-link scrollto" href="#team" style="font-size: 25px; font-weight: bold; color: white">Team</a></li>
+                    <li style="margin-left: 20px;"><a class="nav-link scrollto" href="#presentations" style="font-size: 25px; font-weight: bold; color: white">Presentations</a></li>
+                    <li style="margin-left: 20px;"><a class="nav-link scrollto" href="#calendar" style="font-size: 25px; font-weight: bold; color: white">Calendar</a></li>
+                    <li style="margin-left: 20px; margin-right: 10%;"><a class="getstarted scrollto" href="#contact" style="font-size: 25px; font-weight: bold; color: white">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="py-12 lg:py-24" id="about">
+        <div class="bg-gray-50/90 py-12 lg:py-24 flex items-center justify-center px-4 text-center md:px-6 lg:gap-10">
+            <div class="grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10 lg:w-1/3">
+                <div class="space-y-3">
+                    <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                        DiSA
+                    </h1>
+                    <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                     DiSA (Digitaly Signed Archive) is an arquival project that aims to prove authenticity of documents.
                     It uses an external blockchain to store the hash of the files with timestamps, to verify the
                     authenticity of the documents, and to provide a way to prove the existence of the documents at a
@@ -33,27 +49,36 @@
                     This project is made with the collaboration of the STIC and the Library of the University
                     of Aveiro
                 </p>
+                </div>
+            </div>
+            <div class="w-1/3 text-center">
+                <img src="image" alt="Image" class="rounded-lg object-cover max-h-[400px] mx-auto">
+                <a class="block p-4 bg-gray-100 rounded-md text-center text-gray-700 dark:bg-gray-800 dark:text-gray-300 mt-4" href=".">
+                    Check the platform
+                </a>
             </div>
         </div>
-    </div>
-    <section class="py-12 lg:py-24">
-        <div class=" grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
+    </section>
+
+    <section class="py-12 lg:py-24" id="architecture">
+        <div class="grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div class="space-y-3">
                 <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                     Architecture
                 </h2>
-                <p
-                    class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                     The proposed architecture for the project.
                 </p>
             </div>
-            <div class="mx-auto">
-                <img src="./media/arc" alt="Architecture" class="rounded-lg object-cover max-h-[400px]">
-                <img src="./media/seq" alt="Sequence Diagram" class="rounded-lg object-cover max-h-[400px]">
+            <div class="mx-auto flex justify-center">
+                <img src="./media/arc" alt="Architecture" class="rounded-lg object-cover max-h-[400px] mx-2">
+                <p>-----</p>
+                <img src="./media/seq" alt="Sequence Diagram" class="rounded-lg object-cover max-h-[400px] mx-2">
             </div>
         </div>
     </section>
-    <section class="py-12 lg:py-24">
+
+    <section class="py-12 lg:py-24" id="team">
         <div class=" grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div class="space-y-3">
                 <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -103,15 +128,18 @@
                 </div>
             </div>
         </div>
-        <p class="text-gray-500 dark:text-gray-400 mx-auto">
-            The group is supervised by Professor
-            <a href="mailto:jnviera@ua.pt">José Vieira</a>
-            and Professor
-            <a href="mailto:andre.zuquete@ua.pt">André Zúquete </a>
-            from the University of Aveiro.
-        </p>
+        <div class="container mx-auto px-4 text-center"> <p>.</p>
+            <p class="text-gray-500 dark:text-gray-400">
+                The group is supervised by Professor
+                <a href="mailto:jnviera@ua.pt">José Vieira</a>
+                and Professor
+                <a href="mailto:andre.zuquete@ua.pt">André Zúquete </a>
+                from the University of Aveiro.
+            </p>
+        </div>
     </section>
-    <section class="py-12 lg:py-24">
+    
+    <section class="py-12 lg:py-24" id="presentations">
         <div class=" grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div class="space-y-3">
                 <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
@@ -140,7 +168,7 @@
             </div>
         </div>
     </section>
-    <section class="py-12 lg:py-24">
+    <section class="py-12 lg:py-24" id="contact">
         <div class=" grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
             <div class="space-y-3">
                 <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
