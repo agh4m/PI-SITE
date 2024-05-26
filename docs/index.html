@@ -2,198 +2,567 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-    <link href="./output.css" rel="stylesheet">
-    <title>DiSA</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DiSA Microsite</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: FlexStart
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
 <body>
-    <!--
-// v0 by Vercel.
-// https://v0.dev/t/9Zn1TyJygY3
--->
-    <header id="header" class="fixed-top d-flex align-items-center" style="background-color:rgba(84,78,90,255)">
-        <div class="container d-flex align-items-center justify-content-between">
-            <nav id="navbar" class="navbar">
-                <ul style="display: flex; list-style: none; justify-content: center; align-items: center; margin: 0;">
-                    <li style="margin-left: 20px; margin-right: 30%;"><a href="index.html"><img src="./media/logo.jpeg" alt="DiSA" style="height: 80px; width: auto;"></a></li>
-                    <li style="margin-left: 20px;"><a class="nav-link scrollto" href="#about" style="font-size: 25px; font-weight: bold; color: white">About</a></li>
-                    <li style="margin-left: 20px;"><a class="nav-link scrollto" href="#architecture" style="font-size: 25px; font-weight: bold; color: white">Architecture</a></li>
-                    <li style="margin-left: 20px;"><a class="nav-link scrollto" href="#team" style="font-size: 25px; font-weight: bold; color: white">Team</a></li>
-                    <li style="margin-left: 20px;"><a class="nav-link scrollto" href="#presentations" style="font-size: 25px; font-weight: bold; color: white">Presentations</a></li>
-                    <li style="margin-left: 20px;"><a class="nav-link scrollto" href="#calendar" style="font-size: 25px; font-weight: bold; color: white">Calendar</a></li>
-                    <li style="margin-left: 20px; margin-right: 10%;"><a class="getstarted scrollto" href="#contact" style="font-size: 25px; font-weight: bold; color: white">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section class="py-12 lg:py-24" id="about">
-        <div class="bg-gray-50/90 py-12 lg:py-24 flex items-center justify-center px-4 text-center md:px-6 lg:gap-10">
-            <div class="grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10 lg:w-1/3">
-                <div class="space-y-3">
-                    <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                        DiSA
-                    </h1>
-                    <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                    DiSA (Digitaly Signed Archive) is an arquival project that aims to prove authenticity of documents.
-                    It uses an external blockchain to store the hash of the files with timestamps, to verify the
-                    authenticity of the documents, and to provide a way to prove the existence of the documents at a
-                    certain
-                    time.
-                    Documents are stored in Archivematica, a digital preservation system, after being digitally signed
-                    with
-                    Autenticação.Gov, a digital signature system from the Portuguese government.
-                    This project is made with the collaboration of the STIC and the Library of the University
-                    of Aveiro
-                </p>
-                </div>
-            </div>
-            <div class="w-1/3 text-center">
-                <img src="image" alt="Image" class="rounded-lg object-cover max-h-[400px] mx-auto">
-                <a class="block p-4 bg-gray-100 rounded-md text-center text-gray-700 dark:bg-gray-800 dark:text-gray-300 mt-4" href=".">
-                    Check the platform
-                </a>
-            </div>
-        </div>
-    </section>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-    <section class="py-12 lg:py-24" id="architecture">
-        <div class="grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div class="space-y-3">
-                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                    Architecture
-                </h2>
-                <p class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                    The proposed architecture for the project.
-                </p>
-            </div>
-            <div class="mx-auto flex justify-center">
-                <img src="./media/arc" alt="Architecture" class="rounded-lg object-cover max-h-[400px] mx-2">
-                <p>-----</p>
-                <img src="./media/seq" alt="Sequence Diagram" class="rounded-lg object-cover max-h-[400px] mx-2">
-            </div>
-        </div>
-    </section>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span>Digitally Stored Archive</span>
+      </a>
 
-    <section class="py-12 lg:py-24" id="team">
-        <div class=" grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div class="space-y-3">
-                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                    Meet the Team
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#features">Features</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">We offer a modern solution for storing your documents with authenticity guarantee</h1>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Get Started</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Features</h2>
+          <p>Laboriosam et omnis fuga quis dolor direda fara</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <img src="assets/img/features.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Eos aspernatur rem</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Facilis neque ipsa</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Volup amet voluptas</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Rerum omnis sint</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Alias possimus</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
+                <div class="feature-box d-flex align-items-center">
+                  <i class="bi bi-check"></i>
+                  <h3>Repellendus mollitia</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div> <!-- / row -->
+      </div>
+
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Services</h2>
+          <p>Veritatis et dolores facere numquam et praesentium</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Nesciunt Mete</h3>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Eosle Commodi</h3>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Ledo Markt</h3>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box red">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Asperiores Commodi</h3>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box purple">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Velit Doloremque.</h3>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-box pink">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Dolori Architecto</h3>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Services Section -->
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>F.A.Q</h2>
+          <p>Frequently Asked Questions</p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- F.A.Q List 1-->
+            <div class="accordion accordion-flush" id="faqlist1">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    Non consectetur a erat nam at lectus urna duis?
+                  </button>
                 </h2>
-                <p
-                    class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                    The people behind the project.
-                </p>
-            </div>
-            <div class="mx-auto grid max-w-sm items-center gap-2 sm:max-w-3xl lg:gap-4 lg:grid-cols-3 xl:max-w-4xl">
-                <div class="flex items-center justify-center space-y-2">
-                    <div class="space-y-1.5 border-zinc-200 border-2 w-32 p-5 rounded-xl">
-                        <h3 class="text-lg font-semibold">André Cardoso</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400">108269</p>
-                    </div>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                  </div>
                 </div>
-                <div class="flex items-center justify-center space-y-2">
-                    <div class="space-y-1.5 border-zinc-200 border-2 w-32 p-5 rounded-xl">
-                        <h3 class="text-lg font-semibold">Bruno Páscoa</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400">107418</p>
-                    </div>
-                </div>
-                <div class="flex items-center justify-center space-y-2">
-                    <div class="space-y-1.5 border-zinc-200 border-2 w-32 p-5 rounded-xl">
-                        <h3 class="text-lg font-semibold">Maria Sardinha</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400">108756</p>
-                    </div>
-                </div>
-                <div class="flex items-center justify-center space-y-2">
-                    <div class="space-y-1.5 border-zinc-200 border-2 w-32 p-5 rounded-xl">
-                        <h3 class="text-lg font-semibold">Miguel Pinto</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400">107449</p>
-                    </div>
-                </div>
-                <div class="flex items-center justify-center space-y-2">
-                    <div class="space-y-1.5 border-zinc-200 border-2 w-32 p-5 rounded-xl">
-                        <h3 class="text-lg font-semibold">Pedro Rei</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400">107463</p>
-                    </div>
-                </div>
-                <div class="flex items-center justify-center space-y-2">
-                    <div class="space-y-1.5 border-zinc-200 border-2 w-32 p-5 rounded-xl">
-                        <h3 class="text-lg font-semibold">Tiago Figueiredo</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400">107263</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mx-auto px-4 text-center"> <p>.</p>
-            <p class="text-gray-500 dark:text-gray-400">
-                The group is supervised by Professor
-                <a href="mailto:jnviera@ua.pt">José Vieira</a>
-                and Professor
-                <a href="mailto:andre.zuquete@ua.pt">André Zúquete </a>
-                from the University of Aveiro.
-            </p>
-        </div>
-    </section>
-    
-    <section class="py-12 lg:py-24" id="presentations">
-        <div class=" grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div class="space-y-3">
-                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                    Presentations
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                  </button>
                 </h2>
-                <p
-                    class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                    The presentations made by the team.
-                </p>
-            </div>
-            <div class="mx-auto max-w-[400px] space-y-4">
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="space-y-2">
-                        <a class="block p-4 bg-gray-100 rounded-md text-center text-gray-700 dark:bg-gray-800 dark:text-gray-300"
-                            href="./presentations/G10_M1.pdf">
-                            Presentation 1
-                        </a>
-                    </div>
-                    <div class="space-y-2">
-                        <a class="block p-4 bg-gray-100 rounded-md text-center text-gray-700 dark:bg-gray-800 dark:text-gray-300"
-                            href="./presentations/G10_M2.pdf">
-                            Presentation 2
-                        </a>
-                    </div>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-12 lg:py-24" id="contact">
-        <div class=" grid items-center gap-4 px-4 text-center md:px-6 lg:gap-10">
-            <div class="space-y-3">
-                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                    Contact Us
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                  </button>
                 </h2>
-                <p
-                    class="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                    Any questions can be sent to our group representative (André Cardoso) using the button bellow.
-                </p>
+                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
+                  <div class="accordion-body">
+                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                  </div>
+                </div>
+              </div>
+
             </div>
-            <div class="mx-auto max-w-[400px] space-y-4">
-                <a href="mailto:andremcardoso@ua.pt"
-                    class="block p-4 bg-gray-100 rounded-md text-center text-gray-700 dark:bg-gray-800 dark:text-gray-300">
-                    Contact Us
-                </a>
+          </div>
+
+          <div class="col-lg-6">
+
+            <!-- F.A.Q List 2-->
+            <div class="accordion accordion-flush" id="faqlist2">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
+                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                  </button>
+                </h2>
+                <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
+                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                  </button>
+                </h2>
+                <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
+                    Varius vel pharetra vel turpis nunc eget lorem dolor?
+                  </button>
+                </h2>
+                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
+                  <div class="accordion-body">
+                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                  </div>
+                </div>
+              </div>
+
             </div>
+          </div>
+
         </div>
-    </section>
-    <footer class="py-12 lg:py-24 text-gray-500 dark:text-gray-400">
-        <p class="ms">
-            This project is made with the collaboration of the STIC and the Library of the University
-            of Aveiro
-        </p>
-        <img src="./media/ieeta.png" alt="ieeta and university's logo" class="img-height ms mx">
-    </footer>
+
+      </div>
+
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Portfolio</h2>
+          <p>Check our latest work</p>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-m1">M1</li>
+              <li data-filter=".filter-m2">M2</li>
+              <li data-filter=".filter-m3">M3</li>
+              <li data-filter=".filter-m4">M4</li>
+              <li data-filter=".filter-presentation">Presentations</li>
+              <li data-filter=".filter-report">Report</li>
+              <li data-filter=".filter-others">Others</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-others">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/pdf-icon.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Project Proposal</h4>
+                <p>Others</p>
+                <div class="portfolio-links">
+                  <a href="assets/files/05_Arquivo_Doc_Digitais.pdf" download title="Download PDF"><i class="bi bi-download"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-m1 filter-presentation">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/pdf-icon.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>01 - Inception</h4>
+                <p>Presentation</p>
+                <div class="portfolio-links">
+                  <a href="assets/files/G10_M1.pdf" download title="Download PDF"><i class="bi bi-download"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-m2 filter-presentation">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/pdf-icon.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>02 - Elaboration</h4>
+                <p>Presentation</p>
+                <div class="portfolio-links">
+                  <a href="assets/files/G10_M2.pdf" download title="Download PDF"><i class="bi bi-download"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-m3 filter-presentation">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/pdf-icon.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>03 - Construction</h4>
+                <p>Presentation</p>
+                <div class="portfolio-links">
+                  <a href="assets/files/G10_M3.pdf" download title="Download PDF"><i class="bi bi-download"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Team</h2>
+          <p>Our hard working team</p>
+        </header>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>André Cardoso</h4>
+                <span>Team Leader</span>
+                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Bruno Páscoa</h4>
+                <span>Architect?</span>
+                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Maria Sardinha</h4>
+                <span>Developer</span>
+                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+              </div>
+            </div>
+          </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Miguel Pinto</h4>
+                <span>Developer</span>
+                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Pedro Rei</h4>
+                <span>Developer</span>
+                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Tiago Figueiredo</h4>
+                <span>DevOps Master</span>
+                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Team Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <span>Digitally Stored Archive</span>
+            </a>
+            <p>Informatics Project at Aveiro University in 2024</p>
+          </div>
+
+          <div class="col-lg-6 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li> <a href="https://github.com/Mycsina/DiSA">GitHub repository</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>DiSA</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
