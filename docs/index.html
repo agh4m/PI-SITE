@@ -10,8 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/DiSA_icon.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -43,14 +42,15 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <span>Digitally Stored Archive</span>
+        <img src="assets/img/DiSA_logo.png" alt="">
+        <span>Digitally Signed Archive</span>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#features">Features</a></li>
+          <li><a class="nav-link scrollto" href="#video">Video</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
@@ -146,14 +146,12 @@
         </header>
 
         <div class="row gy-4">
-          <div class="col-lg-4 col-md-12" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="200">
             <div class="video-box">
-              <iframe title="video" width="100%" height="400" src="https://youtu.be/Us__9bv-fsw" allowfullscreen></iframe>
+              <iframe title="video" width="100%" height="400" src="https://www.youtube.com/embed/Us__9bv-fsw" allowfullscreen></iframe>
             </div>
           </div>
-
         </div>
-
       </div>
 
     </section><!-- End Video Section -->
@@ -172,33 +170,37 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-box blue">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Autenticação Gov</h3>
-              <p>Use secure and government-approved digital authentication methods, such as citizen cards and digital mobile keys, to verify user identitiy.</p>
+              <div class="icon">
+                <img src="assets/img/services/autenticacaogov.png" alt="Autentication" class="service-image">
+              </div>
+              <h3>Autentication</h3>
+              <p>Use secure and government-approved digital authentication methods, such as citizen cards and digital mobile keys, to both verify user identitiy and signing documents.</p>
               <a href="https://www.autenticacao.gov.pt/" class="read-more"><span>Autenticacao.gov</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="service-box purple">
-              <i class="ri-discuss-line icon"></i>
+              <div class="icon">
+                <img src="assets/img/services/polygon.png" alt="Blockchain" class="service-image">
+              </div>
               <h3>Blockchain</h3>
-              <p>Ensure the authenticity of your documents by leveraging blockchain technology. This creates an immutable and tamper-proof record of document signatures and metadata.</p>
+              <p>Ensure the integrity of your documents by leveraging blockchain technology. This creates an immutable and tamper-proof record of document signatures and metadata.</p>
               <a href="https://polygon.technology/polygon-pos" class="read-more"><span>Polygon Pos</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="service-box green">
-              <i class="ri-discuss-line icon"></i>
-              <h3>Document's Archive</h3>
-              <p>Get a comprehensive and secure digital archive system that eliminates paper documents, ensuring long-term storage and easy retireval of your digital files.</p>
+              <div class="icon">
+                <img src="assets/img/services/paperless.png" alt="Document Archive" class="service-image">
+              </div>
+              <h3>Document Archive</h3>
+              <p>Get a comprehensive and secure digital archive system that eliminates paper documents, ensuring long-term storage and easy retrieval of your digital files.</p>
               <a href="https://docs.paperless-ngx.com/" class="read-more"><span>Paperless</span> <i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-
         </div>
-
       </div>
 
     </section><!-- End Services Section -->
@@ -220,12 +222,12 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                    Non consectetur a erat nam at lectus urna duis?
+                    What led us to create this platform?
                   </button>
                 </h2>
                 <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    The growing need for secure and reliable digital archiving solutions inspired the creation of DiSA. We aim to provide organizations and individuals a way to preserve important documents with full confidence in their integrity and authenticity.
                   </div>
                 </div>
               </div>
@@ -233,29 +235,16 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                    Where can I suggest new features or report bugs?                
                   </button>
                 </h2>
                 <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
                   <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    Just go to our <a href="https://github.com/Mycsina/DiSA">GitHub repository</a> and open an issue with your suggestion or bug report. We will be happy to hear from you!
                   </div>
                 </div>
               </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-3">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
-                  </button>
-                </h2>
-                <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist1">
-                  <div class="accordion-body">
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                  </div>
-                </div>
-              </div>
-
+              
             </div>
           </div>
 
@@ -267,12 +256,12 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-1">
-                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                    How do I submit files?
                   </button>
                 </h2>
                 <div id="faq2-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                   <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    You will need our client-side app and our website. Firstly create or log in to your account, then copy your login token to the app. Now just follow the app's instructions and see the results on the website!
                   </div>
                 </div>
               </div>
@@ -280,36 +269,19 @@
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-2">
-                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                    How do I share files?
                   </button>
                 </h2>
                 <div id="faq2-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
                   <div class="accordion-body">
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                    You can share files on the website through the dashboard's share menu (requires being logged in and having submitted files). Just add the email you want to share them with!                  
                   </div>
                 </div>
               </div>
-
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2-content-3">
-                    Varius vel pharetra vel turpis nunc eget lorem dolor?
-                  </button>
-                </h2>
-                <div id="faq2-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist2">
-                  <div class="accordion-body">
-                    Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
-
         </div>
-
       </div>
-
     </section><!-- End F.A.Q Section -->
 
     <!-- ======= Portfolio Section ======= -->
@@ -401,7 +373,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section><!-- End Portfolio Section -->
@@ -425,7 +396,6 @@
               <div class="member-info">
                 <h4>André Cardoso</h4>
                 <span>Team Leader</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
               </div>
             </div>
           </div>
@@ -437,19 +407,17 @@
               <div class="member-info">
                 <h4>Bruno Páscoa</h4>
                 <span>Architect</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/maria.jpeg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
                 <h4>Maria Sardinha</h4>
-                <span>Developer</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                <span>Backend Developer</span>
               </div>
             </div>
           </div>
@@ -459,12 +427,11 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/team/miguel.jpg" class="img-fluid" alt="">
               </div>
               <div class="member-info">
                 <h4>Miguel Pinto</h4>
-                <span>Developer</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                <span>Web Developer</span>
               </div>
             </div>
           </div>
@@ -476,7 +443,6 @@
               <div class="member-info">
                 <h4>Pedro Rei</h4>
                 <span>Developer</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
               </div>
             </div>
           </div>
@@ -488,7 +454,6 @@
               <div class="member-info">
                 <h4>Tiago Figueiredo</h4>
                 <span>DevOps Master</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
               </div>
             </div>
           </div>
@@ -506,7 +471,7 @@
         <div class="row gy-4">
           <div class="col-lg-6 col-md-12 footer-info">
             <a href="index.html" class="logo d-flex align-items-center">
-              <img src="assets/img/logo.png" alt="">
+              <img src="assets/img/DiSA_logo.png" alt="">
               <span>Digitally Stored Archive</span>
             </a>
             <p>Informatics Project at Aveiro University in 2024</p>
